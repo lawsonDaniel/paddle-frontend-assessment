@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React,{useState} from 'react'
 import Logo from '../../../images/logo.png'
 import Link from 'next/link'
 import Style from '../../../styles/comingsoon.module.css'
@@ -10,15 +10,19 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header: React.FC = () => {
+  // control responsive nav
+  const[isOpen,setIsOpen]= useState(false)
+
   return (
     <header className={Style.header}>
       <nav className={Style.nav}>
         <div className={Style.logoContainer}>
         <Image src={Logo} alt="logo" className={Style.logo}/>
         </div>
-        <ul className={Style.navlink}>
+        <ul className={isOpen ? `${Style.navlink} ${Style.navlinkopen}`: Style.navlink}>
           <li>
             <Link href="/about">
               <a>About us</a>
@@ -35,8 +39,12 @@ const Header: React.FC = () => {
             </Link>
           </li>
         </ul>
-      
-        <MenuIcon style={{color:"#fff"}} className={Style.hamburger}/>
+      <CloseIcon className={isOpen ? `${Style.close} ${Style.closeclose}` : ` ${Style.closeclose}`} onClick={()=>{
+          setIsOpen(false)
+        }} />
+        <MenuIcon onClick={()=>{
+          setIsOpen(true)
+        }} style={{color:"#fff"}} className={Style.hamburger}/>
       </nav>
 
       <div className={Style.jumbotron}>
