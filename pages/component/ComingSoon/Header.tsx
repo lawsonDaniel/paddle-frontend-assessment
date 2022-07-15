@@ -4,7 +4,11 @@ import Logo from '../../../images/logo.png'
 import Link from 'next/link'
 import Style from '../../../styles/comingsoon.module.css'
 import Cards from './Cards'
-
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 
 const Header = () => {
@@ -46,11 +50,29 @@ const Header = () => {
               <Cards number={11} string="Seconds"/>
            </div>
            <form className={Style.form}>
-           <input className={Style.input} placeholder="First Name" type="text" required />
-           <input className={Style.input} placeholder="Last Name" type="text" required />
+          <div className={Style.inputNameContainer}>
+              <input className={Style.input} placeholder="First Name" type="text" required />
+              <input className={Style.input} placeholder="Last Name" type="text" required />
+          </div>
+           <div className={Style.EmailInputContainer}>
+              <input type="email" placeholder='Enter your email address...'/>
+              <button value="submit">Join our waiting list</button>
+           </div>
            </form>
+           <div className={Style.socialMedia}>
+            <YouTubeIcon/>
+            <FacebookIcon/>
+            <LinkedInIcon/>
+            <InstagramIcon/>
+            <TwitterIcon/>
+           </div>
+           <div className={Style.privacy}>
+            <h5>Terms of services</h5>
+            <h5>Privacy policy</h5>
+           </div>
+           <div className={Style.copy}>Copyright 2021 @ Peddle Technologies. All Rights Reserved.</div>
       </div>
-      
+      <div className={Style.cssball4} ></div>
       <div  className={Style.cssball1}></div>
       <div className={Style.cssball2}></div>
       <div className={Style.cssball3}></div>
