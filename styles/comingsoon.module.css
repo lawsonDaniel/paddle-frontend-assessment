@@ -1,0 +1,161 @@
+/* nav section */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 80px;
+}
+.navlink{
+    display: flex;
+    list-style: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    Color: rgb(255, 255, 255);
+    line-height: 27px;
+    text-transform: uppercase;
+    gap: 62px;
+    cursor:pointer
+}
+.header{
+    height: 100%;
+    background: linear-gradient(#210045,#0C0123);
+}
+.logo{
+   width: 100%;
+   height: 100%;
+    
+}
+.logoContainer{
+    width: 80px;
+    display: flex
+}
+.contact{
+    background: #271AC1;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+/* jumbotron */
+
+.jumbotron{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+.jumbotron h1{
+    width: 790px;
+    font-size: 50px;
+    font-weight: 600;
+    z-index: 2;
+}
+.jumbotron p{
+    width: 600px;
+    font-weight: 200;
+}
+/* ball design */
+.cssball1{
+    width: 127px;
+    height: 126px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, #7F1E7B 10%, #19073B 90%);
+    position: absolute;
+    left: 201px;
+    top: 97px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.cssball2{
+    width: 80px;
+    height: 83px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, #213F72 10%,#19073B 90%);
+    position: absolute;
+    left: 1031px;
+    top: 295px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.cssball3{
+    width: 150px;
+    height: 153px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, #7F4129 10%,#1C0C28 90%);
+    position: absolute;
+    left: 219px;
+    top: 800px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+
+}
+/* //cards */
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px   
+ }
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 113px;
+    width: 103px;
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.cardBody{
+    font-size: 15px;
+}
+.cardHeading{
+    font-size: 33px;
+    font-weight: 500;
+}
+
+/* form */
+.form{
+    display: flex;
+    margin-top: 10px;
+    z-index: 5;
+}
+.input{
+    margin: 40px 25px;
+    width: 180px;
+    display: block;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: solid 1px #707070;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #707070 4%);
+    background-position: -180px 0;
+    background-size: 180px 100%;
+    background-repeat: no-repeat;
+    color: #707070;
+}
+.input:focus, .input:valid {
+box-shadow: none;
+outline: none;
+background-position: 0 0;
+}
+.input:focus::-webkit-input-placeholder, .input:valid::-webkit-input-placeholder {
+color: #fff;
+font-size: 11px;
+transform: translateY(-20px);
+visibility: visible !important;
+}
