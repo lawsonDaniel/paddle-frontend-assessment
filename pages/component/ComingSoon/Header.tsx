@@ -9,12 +9,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import MenuIcon from '@mui/icons-material/Menu';
 
-
-const Header = () => {
- 
-  
-  
+const Header: React.FC = () => {
   return (
     <header className={Style.header}>
       <nav className={Style.nav}>
@@ -33,11 +30,13 @@ const Header = () => {
             </Link>
           </li>
           <li >
-            <Link href="/about">
+            <Link href="/contact">
               <a className={Style.contact}>contact us</a>
             </Link>
           </li>
         </ul>
+      
+        <MenuIcon style={{color:"#fff"}} className={Style.hamburger}/>
       </nav>
 
       <div className={Style.jumbotron}>

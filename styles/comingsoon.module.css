@@ -6,7 +6,7 @@
     height: 100px;
     padding: 0 80px;
     margin-bottom: 20px;
-
+   
 }
 .navlink{
     display: flex;
@@ -50,6 +50,7 @@
     align-items: center;
     
     
+    
 }
 .jumbotron h1{
     width: 790px;
@@ -61,6 +62,7 @@
 .jumbotron p{
     width: 600px;
     font-weight: 200;
+    z-index: 2;
 }
 /* ball design */
 .cssball1{
@@ -137,6 +139,7 @@
     justify-content: center;
     border-radius: 14px;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 .cardBody{
@@ -186,7 +189,7 @@ transform: translateY(-20px);
 visibility: visible !important;
 }
 .EmailInputContainer{
-    width: 446px;
+    width: 423px;
     background: #Fff;
     height: 51px;
     display: flex;
@@ -212,7 +215,7 @@ visibility: visible !important;
     letter-spacing: 0px;
     text-transform: uppercase;
     opacity: 1;
-    width: 206px;
+    width: 246px;
     position: relative;
     right: -34px;
     border-radius: 32px;
@@ -228,16 +231,82 @@ visibility: visible !important;
     display: flex;
     gap: 30px;
     margin-top: 200px;
+    z-index: 2;
 }
 
 /* privacy */
 .privacy{
     display: flex;
     gap: 20px;
+    z-index: 2;
 }
 .privacy h5{
     font-weight: 200;
+    z-index: 2;
 }
 .copy{
     font-weight: 200;
+    z-index: 2;
+}
+.hamburger{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .navlink{
+        gap:20px
+    }
+    .jumbotron h1{
+        width: 490px;
+        font-size: 30px;
+        font-weight: 500;
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    .jumbotron p{
+        width: 400px;
+        font-weight: 200;
+    }
+    .EmailInputContainer{
+        width: 346px;
+    }
+    .EmailInputContainer input{
+        font-size: 15px;
+        position: relative;
+        left: 12px;
+    }
+    .EmailInputContainer button{
+        right: -14px;
+    }
+    .inputNameContainer{
+        gap: 55px;
+    }
+  
+   .navlink{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .cssball4{
+        display: none;
+    }
+    .cssball2{
+        left: 104px;
+        top: 295px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .card{
+        height: 107px;
+        width: 90px;
+    }
+    .cssball3{
+        left: 105px;
+        top: 757px;
+    }
+}
+@media screen and (min-width:998px) {
+    .cssball2{
+        left: 879px;
+    }
 }
