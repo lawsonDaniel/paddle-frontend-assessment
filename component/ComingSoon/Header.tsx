@@ -1,52 +1,19 @@
 import Image from 'next/image'
 import React,{useState} from 'react'
-import Logo from '../../../images/logo.png'
-import Link from 'next/link'
-import Style from '../../../styles/comingsoon.module.css'
+import Style from '../../styles/comingsoon.module.css'
 import Cards from './Cards'
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+import Nav from '../Nav';
+
 
 const Header: React.FC = () => {
-  // control responsive nav
-  const[isOpen,setIsOpen]= useState(false)
-
   return (
     <header className={Style.header}>
-      <nav className={Style.nav}>
-        <div className={Style.logoContainer}>
-        <Image src={Logo} alt="logo" className={Style.logo}/>
-        </div>
-        <ul className={isOpen ? `${Style.navlink} ${Style.navlinkopen}`: Style.navlink}>
-          <li>
-            <Link href="/about">
-              <a>About us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a>blog</a>
-            </Link>
-          </li>
-          <li >
-            <Link href="/contact">
-              <a className={Style.contact}>contact us</a>
-            </Link>
-          </li>
-        </ul>
-      <CloseIcon className={isOpen ? `${Style.close} ${Style.closeclose}` : ` ${Style.closeclose}`} onClick={()=>{
-          setIsOpen(false)
-        }} />
-        <MenuIcon onClick={()=>{
-          setIsOpen(true)
-        }} style={{color:"#fff"}} className={Style.hamburger}/>
-      </nav>
-
+      <Nav/>
       <div className={Style.jumbotron}>
           <h1>Something awesome is coming soon</h1>
           <p>Your all-in-one affiliate marketing tracking software track, automate and optimize your campaigns.</p>

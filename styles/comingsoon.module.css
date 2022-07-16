@@ -284,52 +284,7 @@ visibility: visible !important;
     .inputNameContainer{
         gap: 55px;
     }
-/* hamburger menu closed */
-   .navlink{
-        display: none;
-        
-    }
-    .hamburger{
-        display: block;
-    }
-    .logoContainer{
-        display: block;
-    }
-    .closeclose{
-        display: none;
-    }
-    /*hambuger menu open */
-   
-    .navlinkopen{
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        margin: 0;
-        align-items: center;
-        background-color: #19073B;
-        z-index: 8;
-        color: #fff;
-        padding: 10px;
-        height: 300px;
-        overflow-y:hidden;
-        width: 100%;
-        left: 0;
-        z-index: 24;
-        padding-top: 40px;
-      
-    }
-    .close{
-        display: block;
-        position: fixed;
-        z-index: 30;
-        right: 70px;
-        top: 38px;
-        
-    }
- .hamburgeropen{
-    display: none;
- }
+
     .cssball4{
         display: none;
     }
@@ -337,6 +292,52 @@ visibility: visible !important;
         left: 104px;
         top: 295px;
     }
+    /* hamburger menu closed */
+   .navlink{
+    display: none;
+    
+}
+.hamburger{
+    display: block;
+}
+.logoContainer{
+    display: block;
+}
+.closeclose{
+    display: none;
+}
+/*hambuger menu open */
+
+.navlinkopen{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    align-items: center;
+    background-color: #19073B;
+    z-index: 8;
+    color: #fff;
+    padding: 10px;
+    height: 300px;
+    overflow-y:hidden;
+    width: 100%;
+    left: 0;
+    z-index: 24;
+    padding-top: 40px;
+  
+}
+.close{
+    display: block;
+    position: fixed;
+    z-index: 30;
+    right: 70px;
+    top: 38px;
+    
+}
+.hamburgeropen{
+display: none;
+}
 }
 @media screen and (max-width: 576px) {
     .card{
@@ -347,6 +348,7 @@ visibility: visible !important;
         left: 105px;
         top: 757px;
     }
+    
 }
 @media screen and (min-width:998px) {
     .cssball2{
