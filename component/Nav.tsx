@@ -11,9 +11,11 @@ const Nav = () => {
   const[isOpen,setIsOpen]= useState(false)
   return (
     <nav className={Style.nav}>
+      <Link href="/">
         <div className={Style.logoContainer}>
         <Image  src={Logo} alt="logo" className={Style.logo}/>
         </div>
+        </Link>
         <ul className={isOpen ? `${Style.navlink} ${Style.navlinkopen}`: Style.navlink}>
           <li>
             <Link href="/about">

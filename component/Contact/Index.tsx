@@ -5,7 +5,7 @@ import Router from 'next/router'
 const Index = () => {
   return (
     <div className={Style.container}>
-        <div className={Style.leftContainer}>Image</div>
+        <div className={Style.leftContainer}></div>
         <div className={Style.rightContainer}>
           <div className={Style.header}>
             Hey, we are still in the works, but you can send us a message!

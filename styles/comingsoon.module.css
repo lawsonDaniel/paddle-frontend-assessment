@@ -7,6 +7,7 @@
     padding: 0 80px;
     margin-bottom: 20px;
    
+   
 }
 .navlink{
     display: flex;
@@ -348,7 +349,7 @@ display: none;
         left: 105px;
         top: 757px;
     }
-    
+
 }
 @media screen and (min-width:998px) {
     .cssball2{
