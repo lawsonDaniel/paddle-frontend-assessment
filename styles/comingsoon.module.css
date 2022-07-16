@@ -1,53 +1,10 @@
 /* nav section */
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 80px;
-    margin-bottom: 20px;
-   
-   
-}
-.navlink{
-    display: flex;
-    list-style: none;
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 15px;
-    Color: rgb(255, 255, 255);
-    line-height: 27px;
-    text-transform: uppercase;
-    gap: 62px;
-    cursor:pointer;
-  
-}
 .header{
     height: 1138px;
     background: linear-gradient(#210045,#0C0123);
     
 }
-.logo{
-   width: 100%;
-   height: 100%;
-    
-}
-.logoContainer{
-    width: 80px;
-    display: flex
-}
-.contact{
-    background: #271AC1;
-    padding: 10px 25px;
-    border-radius: 25px;
-}
-.close{
-    display:none;
-    color: #fff;
-}
-.closeclose{
-    display: none;
-}
+
 /* jumbotron */
 
 .jumbotron{
@@ -233,32 +190,9 @@ visibility: visible !important;
     -o-border-radius: 32px;
 }
 
-/* social media */
 
-.socialMedia{
-    display: flex;
-    gap: 30px;
-    margin-top: 200px;
-    z-index: 2;
-}
 
-/* privacy */
-.privacy{
-    display: flex;
-    gap: 20px;
-    z-index: 2;
-}
-.privacy h5{
-    font-weight: 200;
-    z-index: 2;
-}
-.copy{
-    font-weight: 200;
-    z-index: 2;
-}
-.hamburger{
-    display: none;
-}
+
 @media screen and (max-width:992px) {
     .jumbotron h1{
         width: 490px;
@@ -293,52 +227,7 @@ visibility: visible !important;
         left: 104px;
         top: 295px;
     }
-    /* hamburger menu closed */
-   .navlink{
-    display: none;
-    
-}
-.hamburger{
-    display: block;
-}
-.logoContainer{
-    display: block;
-}
-.closeclose{
-    display: none;
-}
-/*hambuger menu open */
-
-.navlinkopen{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    align-items: center;
-    background-color: #19073B;
-    z-index: 8;
-    color: #fff;
-    padding: 10px;
-    height: 300px;
-    overflow-y:hidden;
-    width: 100%;
-    left: 0;
-    z-index: 24;
-    padding-top: 40px;
   
-}
-.close{
-    display: block;
-    position: fixed;
-    z-index: 30;
-    right: 70px;
-    top: 38px;
-    
-}
-.hamburgeropen{
-display: none;
-}
 }
 @media screen and (max-width: 576px) {
     .card{

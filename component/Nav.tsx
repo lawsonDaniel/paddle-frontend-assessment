@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Style from '../styles/comingsoon.module.css'
+import Style from '../styles/nav.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Logo from '../images/logo.png'
@@ -33,12 +33,14 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-      <CloseIcon  className={isOpen ? `${Style.close} ${Style.closeclose}` : ` ${Style.closeclose}`} onClick={()=>{
-          setIsOpen(false)
-        }} />
-        <MenuIcon onClick={()=>{
-           setIsOpen(true)
-        }} style={{color:"#fff"}} className={Style.hamburger}/>
+      {
+        isOpen === true ? <CloseIcon  className={isOpen ? `${Style.close} ${Style.closeclose}` : ` ${Style.closeclose}`} onClick={()=>{
+          setIsOpen((state)=> state = false)
+        }} /> :  <MenuIcon onClick={()=>{
+          setIsOpen((state)=> state = true)
+       }} style={{color:"#fff"}} className={Style.hamburger}/>
+      }
+       
       </nav>
   )
 }

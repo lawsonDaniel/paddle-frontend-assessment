@@ -6,7 +6,7 @@ import Nav from '../Nav';
 import Footer from '../Footer';
 
 
-const Header: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <header className={Style.header}>
       <Nav/>
@@ -39,4 +39,4 @@ const Header: React.FC = () => {
   )
 }
 
-export default Header
+export default Index

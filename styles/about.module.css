@@ -172,7 +172,7 @@
     }
     .col2{
         position: absolute;
-        top: 0%;
+        top: 9%;
     }
     .section3{
         grid-template-columns: 1fr ;  
