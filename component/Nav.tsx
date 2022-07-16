@@ -37,7 +37,7 @@ const Nav = () => {
           setIsOpen(false)
         }} />
         <MenuIcon onClick={()=>{
-          setIsOpen(true)
+           setIsOpen(true)
         }} style={{color:"#fff"}} className={Style.hamburger}/>
       </nav>
   )

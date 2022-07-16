@@ -75,7 +75,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #fff;
-    margin-top: 73px;
+    margin-top: 143px;
+    line-height: 29px;
 }
 .numberCounter{
     display: flex;
@@ -111,7 +112,7 @@
 .pattern{
     width: 254px;
     height: 100px;
-    margin-top: 68px;
+    margin-top: 144px;
 }
 .section3right{
     display: flex;
@@ -123,4 +124,61 @@
     opacity: 1;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+}
+.section3p{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgb(186 137 239 / 9%);
+    opacity: 1;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 271px;
+    color: #fff;
+    font-weight: 200;
+    padding: 35px 87px;
+    margin-top: 151px;
+   
+}
+.section4 h1{
+    font-weight: 400;
+    font-size: 32px;
+}
+.contactLink{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    color: #FF00F7;
+}
+.section5{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:992px) {
+    .section1{
+        grid-template-columns:  1fr;
+    }
+    .AboutContainer{
+        left: 12%;
+    }
+    .col2{
+        position: absolute;
+        top: 0%;
+    }
+    .section3{
+        grid-template-columns: 1fr ;  
+    }
+    .HeaderH1{
+        width: 489px;
+        font-weight: 200;
+    }
 }

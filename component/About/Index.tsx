@@ -1,7 +1,8 @@
 import React from 'react'
 import Nav from '../Nav'
 import Style from '../../styles/about.module.css'
-
+import Link from 'next/link'
+import Footer from '../Footer'
 
 const Index = () => {
   return (
@@ -50,7 +51,7 @@ const Index = () => {
                     </div>
                     <div>GROWING WITH YOU</div>
                     </div>
-                    <div>
+                    <div className={Style.section3p}>
                         <p>
                         Leveraging the best technology, we have developed an all-in-one affiliate
                          marketing tracking software, a genius tool to help you track, automate and
@@ -64,6 +65,23 @@ const Index = () => {
                     </div>
             </div>
           </section>
+          <section className={Style.section4}>
+            <div className={Style.contactContainer}>
+              <h1 className={Style.contactHeading}>Got a Question?</h1>
+              <p>See how Metricks can help your business grow with best Affiliate Marketing Tracking Software.</p>
+            </div>
+            <Link href="/contact">
+            <div className={Style.contactLink}>
+                <div>Contact</div>
+                <span className="material-symbols-outlined">
+                  arrow_forward
+                </span>
+            </div>
+            </Link>
+          </section>
+         <section className={Style.section5}>
+          <Footer/>
+         </section>
         </div>
     </div>
   )

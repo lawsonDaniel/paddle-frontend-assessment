@@ -2,12 +2,8 @@ import Image from 'next/image'
 import React,{useState} from 'react'
 import Style from '../../styles/comingsoon.module.css'
 import Cards from './Cards'
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import Nav from '../Nav';
+import Footer from '../Footer';
 
 
 const Header: React.FC = () => {
@@ -33,18 +29,7 @@ const Header: React.FC = () => {
               <button value="submit">Join our waiting list</button>
            </div>
            </form>
-           <div className={Style.socialMedia}>
-            <YouTubeIcon/>
-            <FacebookIcon/>
-            <LinkedInIcon/>
-            <InstagramIcon/>
-            <TwitterIcon/>
-           </div>
-           <div className={Style.privacy}>
-            <h5>Terms of services</h5>
-            <h5>Privacy policy</h5>
-           </div>
-           <div className={Style.copy}>Copyright 2021 @ Peddle Technologies. All Rights Reserved.</div>
+          <Footer/>
       </div>
       <div className={Style.cssball4} ></div>
       <div  className={Style.cssball1}></div>
