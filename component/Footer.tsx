@@ -8,7 +8,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
   return (
-    <>
+  
+      <div className={Style.footer}>
         <div className={Style.socialMedia}>
         <YouTubeIcon  className={Style.icon}/>
         <FacebookIcon className={Style.icon}/>
@@ -21,7 +22,8 @@ const Footer = () => {
         <h5>Privacy policy</h5>
     </div>
     <div className={Style.copy}>Copyright 2021 @ Peddle Technologies. All Rights Reserved.</div>
-   </>
+      </div>
+   
   )
 }
 
