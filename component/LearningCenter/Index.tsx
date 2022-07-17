@@ -3,6 +3,8 @@ import Nav from '../Nav'
 import Style from '../../styles/learningcenter.module.css'
 import Footer from '../Footer'
 import SearchIcon from '@mui/icons-material/Search';
+import Features from './Features'
+import AddFeature from './AddFeature';
 
 const Index = () => {
   return (
@@ -22,6 +24,22 @@ const Index = () => {
                       </div>Learning Center</div>
                     <div className={Style.HeaderH1}>Learning Center</div>
                 </div>
+            </section>
+             <section className={Style.section2}>
+              <div className={Style.featureleft}>
+              <Features/>
+              <div className={Style.addfeaturesection}>
+                <AddFeature/>
+                <AddFeature/>
+                <AddFeature/>
+                <AddFeature/>
+              </div>
+
+              </div>
+              
+              <div>
+               
+              </div>
             </section>
         <Footer/>  
     </div>
