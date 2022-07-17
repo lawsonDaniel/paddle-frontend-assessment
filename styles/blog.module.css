@@ -156,7 +156,6 @@
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
     justify-content: center;
     align-items: center;
@@ -164,8 +163,83 @@
     
 }
 
+.section4{
+    background-color: #fff;
+}
+.shotcard{
+    width: 422px;
+    height: 408px;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 30px #00000038;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+}
+.shotcard h1{
+    font-weight: 400;
+}
+.shotcard p{
+    font-weight: 300;
+    font-size: 16px;
+}
+.recent{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 39px 87px;
+}
+.recent h1{
+    font-weight: 400;
+    font-size: 32px;
+}
+.recent span{
+    font-weight: 200;
+    font-size: 19px;
+    width: 462px;
+}
+.section5{
+    background-color: #fff;
+    padding: 115px 0;
+}
+.loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #7C0FD5;
+    width: 210px;
+    margin: auto;
+    height: 61px;
+    border-radius: 32px;
+    font-size: 18px;
 
+}
+.section6{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent linear-gradient(180deg, #213F72 0%, #19073B 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 320px;
+    color: #fff;
+    font-weight: 200;
+    padding: 35px 87px;
 
+}
+.section6 h1{
+    font-weight: 400;
+    font-size: 32px;
+}
+.contactLink{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    color: #FF00F7;
+}
 @media screen and (max-width:992px) {
     .section1{
         grid-template-columns:  1fr;

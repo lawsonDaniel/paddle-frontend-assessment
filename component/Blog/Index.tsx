@@ -4,6 +4,8 @@ import Style from '../../styles/blog.module.css'
 import Navlight from '../../common/Navlight'
 import Footerlight from '../../common/Footerlight'
 import Cards from './Cards'
+import SCards from './SCards'
+import Link from 'next/link'
 
 const Index = () => {
   return (
@@ -43,6 +45,32 @@ const Index = () => {
             <section className={Style.section3}>
                 <Cards/>
             </section>
+            
+            <section className={Style.section4}>
+                <div className={Style.recent}>
+                    <h1>Recent Articles</h1>
+                    <span>Lorem ipsum dolor sitemp sed diam nonumy ipsum dolor sitemp sed diam nonumy </span>
+                </div>
+                
+            </section>
+            <section className={Style.section5}>
+                <SCards/>
+                <div className={Style.loadmore}>Load More</div>
+            </section>
+            <section className={Style.section6}>
+            <div className={Style.contactContainer}>
+              <h1 className={Style.contactHeading}>what to know more about Metrics ?</h1>
+              <p>Learn who we are and what drives us.</p>
+            </div>
+            <Link href="/contact">
+            <div className={Style.contactLink}>
+                <div>Contact</div>
+                <span className="material-symbols-outlined">
+                  arrow_forward
+                </span>
+            </div>
+            </Link>
+          </section>
         <div className={Style.footercontainer}>
             <Footerlight/>
         </div>
