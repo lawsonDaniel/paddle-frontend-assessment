@@ -29,7 +29,7 @@ const Navlight = () => {
           </li>
           <li >
             <Link href="/contact">
-              <a>contact us</a>
+              <a className={Style.contact}>contact us</a>
             </Link>
           </li>
         </ul>

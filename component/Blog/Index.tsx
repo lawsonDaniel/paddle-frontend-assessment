@@ -1,8 +1,9 @@
 import React from 'react'
-import Nav from '../Nav'
+import Nav from '../../common/Nav'
 import Style from '../../styles/blog.module.css'
-import Navlight from '../Navlight'
-import Footerlight from '../Footerlight'
+import Navlight from '../../common/Navlight'
+import Footerlight from '../../common/Footerlight'
+import Cards from './Cards'
 
 const Index = () => {
   return (
@@ -38,6 +39,9 @@ const Index = () => {
 
                         </div>
                     </div>
+            </section>
+            <section className={Style.section3}>
+                <Cards/>
             </section>
         <div className={Style.footercontainer}>
             <Footerlight/>

@@ -33,7 +33,9 @@
  .contact{
     background: #271AC1;
     padding: 10px 25px;
-    border-radius: 25px;
+    box-shadow: rgb(9 9 9 / 57%) 0px 0px 10px;
+    border-radius: 28px;
+    text-transform: uppercase;
 }
 .close{
     display:none;

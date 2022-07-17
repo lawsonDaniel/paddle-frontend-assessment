@@ -2,8 +2,8 @@ import Image from 'next/image'
 import React,{useState} from 'react'
 import Style from '../../styles/comingsoon.module.css'
 import Cards from './Cards'
-import Nav from '../Nav';
-import Footer from '../Footer';
+import Nav from '../../common/Nav';
+import Footer from '../../common/Footer';
 
 
 const Index: React.FC = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
-import Nav from '../Nav'
+import Nav from '../../common/Nav'
 import Style from '../../styles/about.module.css'
 import Link from 'next/link'
-import Footer from '../Footer'
+import Footer from '../../common/Footer'
 
 const Index = () => {
   return (
