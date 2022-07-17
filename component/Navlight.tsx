@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
-import Style from '../styles/nav.module.css'
+import Style from '../styles/navlight.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import Logo from '../images/logo.png'
+import Logo from '../images/main-logo.svg'
 import Link from 'next/link'
 import Image from 'next/image';
 
-const Nav = () => {
+const Navlight = () => {
       // control responsive nav
   const[isOpen,setIsOpen]= useState(false)
   return (
@@ -29,7 +29,7 @@ const Nav = () => {
           </li>
           <li >
             <Link href="/contact">
-              <a className={Style.contact}>contact us</a>
+              <a>contact us</a>
             </Link>
           </li>
         </ul>
@@ -38,11 +38,11 @@ const Nav = () => {
           setIsOpen((state)=> state = false)
         }} /> :  <MenuIcon onClick={()=>{
           setIsOpen((state)=> state = true)
-       }} style={{color:"#fff"}} className={Style.hamburger}/>
+       }}  className={Style.hamburger}/>
       }
        
       </nav>
   )
 }
 
-export default Nav
+export default Navlight

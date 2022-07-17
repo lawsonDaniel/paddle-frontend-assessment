@@ -1,0 +1,36 @@
+/* social media */
+
+.socialMedia{
+    display: flex;
+    gap: 30px;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+/* privacy */
+.privacy{
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+.privacy h5{
+    font-weight: 200;
+    z-index: 2;
+}
+.copy{
+    font-weight: 200;
+    z-index: 2;
+}
+.icon{
+    font-size: 28px;
+    color: #888888;
+}
+.icon:hover{
+    color: #000;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
