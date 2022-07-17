@@ -68,6 +68,46 @@
     background-color: #fff;
     color: #000;
 }
+.session2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    grid-row: 10px;
+}
+.left{
+    padding: 0 87px;
+    font-weight: 300;
+}
+.left h1{
+    font-size: 32px;
+    font-weight: 400;
+}
+.form input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    height: 50px;
+    width: 305px;
+    font-size: 18px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: 369px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 39px;
+   
+    
+}
+.right{
+    padding: 0 87px;
+}
+
 @media screen and (max-width:992px) {
     .section1{
         grid-template-columns:  1fr;
@@ -86,6 +126,9 @@
     .icon{
         font-size: 50px;
         
+    }
+    .session2{
+        grid-template-columns: 1fr;
     }
     
 }
