@@ -1,8 +1,13 @@
 import React from 'react'
+import Style from '../../styles/learningcenter.module.css'
 
-const FeatureMenu = () => {
+interface Menu{
+  menuItem: String
+}
+
+const FeatureMenu = ({menuItem}:Menu) => {
   return (
-    <div>FeatureMenu</div>
+    <div className={Style.featureMenu}>{menuItem}</div>
   )
 }
 

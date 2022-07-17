@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import SearchIcon from '@mui/icons-material/Search';
 import Features from './Features'
 import AddFeature from './AddFeature';
+import Menu from './Menu';
 
 const Index = () => {
   return (
@@ -38,7 +39,7 @@ const Index = () => {
               </div>
               
               <div>
-               
+               <Menu/>
               </div>
             </section>
         <Footer/>  
