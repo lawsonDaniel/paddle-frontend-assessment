@@ -18,11 +18,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Routes
 This are the following routes avaliable on this project
 
-``` [About](http://localhost:3000/about)
-	[Contact](http://localhost:3000/contact)
-	[Home](http://localhost:3000/)
-	[learningcenter](http://localhost:3000/learningcenter)
-	[Github](http://localhost:3000/github)
+``` About (http://localhost:3000/about)
+	Contact (http://localhost:3000/contact)
+	Home (http://localhost:3000/)
+	Learningcenter (http://localhost:3000/learningcenter)
+	Github (http://localhost:3000/github)
 
 ```
 
