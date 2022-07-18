@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Style from '../../styles/github.module.css'
+import Navlight from '../../common/Navlight'
+import Footerlight from '../../common/Footerlight'
 
 const Index = () => {
     //empty state to setdat 
@@ -25,6 +27,8 @@ const Index = () => {
     let Now = new Date();
    
   return (
+    <>
+    <Navlight/>
     <div className={Style.container}>
         
       {
@@ -51,6 +55,8 @@ const Index = () => {
       }
      
     </div>
+    <Footerlight/>
+    </>
   )
 }
 

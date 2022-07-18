@@ -27,6 +27,11 @@ const Nav = () => {
               <a>blog</a>
             </Link>
           </li>
+          <li>
+            <Link href="/github">
+              <a>Github</a>
+            </Link>
+          </li>
           <li >
             <Link href="/contact">
               <a className={Style.contact}>contact us</a>
